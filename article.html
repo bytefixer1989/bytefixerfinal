@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Άρθρο — Bytefixer Blog</title>
+  <meta name="description" content="Bytefixer Blog — οδηγοί και συμβουλές τεχνολογίας.">
+  <meta property="og:title" content="Bytefixer Blog">
+  <meta property="og:description" content="Οδηγοί και συμβουλές τεχνολογίας.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#3b82f6">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="icon" href="icons/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="icons/logo.jpg">
+</head>
+<body class="blog-page article-page">
+
+  <div class="read-progress" id="readProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="icons/logo.jpg" alt="Bytefixer Logo" width="32" height="32" style="display:block; clip-path:inset(7% round 50%);">
+        <span><span style="color:#fff">Byte</span><span style="color:#2563eb">fixer</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Αρχική</a>
+        <a href="index.html#services">Υπηρεσίες</a>
+        <a href="index.html#pricing">Τιμές</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="index.html#contact">Επικοινωνία</a>
+        <a href="tel:+306933194753" class="nav-cta">📞 Καλέστε μας</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="articleRoot">
+    <!-- Rendered by js/article.js -->
+    <div class="article-loading"><div class="spinner"></div></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="nav-logo footer-logo-always">
+          <img src="icons/logo.jpg" alt="Bytefixer Logo" width="28" height="28" style="display:block; clip-path:inset(7% round 50%);">
+          <span><span style="color:#fff">Byte</span><span style="color:#2563eb">fixer</span></span>
+        </a>
+        <div class="blog-footer-links">
+          <a href="index.html#services">Υπηρεσίες</a>
+          <a href="index.html#pricing">Τιμές</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Επικοινωνία</a>
+        </div>
+      </div>
+      <div class="footer-copy">© 2025 Bytefixer. Με επιφύλαξη παντός δικαιώματος.</div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/blog-data.js"></script>
+  <script src="js/blog-common.js"></script>
+  <script src="js/article.js"></script>
+</body>
+</html>
